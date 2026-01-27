@@ -294,3 +294,14 @@ li{ margin: 8px 0; }
   background: transparent; /* ensures PNG stays clean */
 }
 
+.project-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-actions {
+  margin-top: auto; /* pushes button to bottom */
+  display: flex;
+  justify-content: center;
+}
