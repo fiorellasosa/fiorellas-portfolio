@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Fiorella Sosa</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="top">
+    <div class="brand">
+      <div class="avatar">FS</div>
+      <div>
+        <h1>Fiorella Sosa</h1>
+        <p class="subtitle">Marketing • Brand Strategy • Consumer Insights</p>
+      </div>
+    </div>
+
+    <nav class="tabs">
+      <a class="tab" href="index.html">Home</a>
+      <a class="tab" href="projects.html">Projects</a>
+      <a class="tab" href="writing.html">Writing</a>
+      <a class="tab active" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2 class="section-title">Contact</h2>
+
+    <div class="card">
+      <p>If you’d like to connect, feel free to reach out:</p>
+
+      <ul class="contact">
+        <li>
+          <strong>Email:</strong>
+          <a href="mailto:sosabara@usc.edu">sosabara@usc.edu</a>
+        </li>
+
+        <li>
+          <strong>LinkedIn:</strong>
+          <a href="https://www.linkedin.com/in/fiorellasosa/" target="_blank" rel="noreferrer">
+            linkedin.com/in/fiorellasosa
+          </a>
+        </li>
+
+        <li>
+          <strong>Resume:</strong>
+          <a href="FSresume.pdf" target="_blank" rel="noreferrer">
+            View Resume (PDF)
+          </a>
+        </li>
+      </ul>
+
+      <p class="hint">
+      </p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Fiorella Sosa</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

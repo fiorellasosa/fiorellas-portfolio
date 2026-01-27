@@ -17,12 +17,12 @@
       </div>
     </div>
 
-    <nav class="tabs" aria-label="Site tabs">
-      <button class="tab active" data-tab="home">Home</button>
-      <button class="tab" data-tab="projects">Projects</button>
-      <button class="tab" data-tab="writing">Writing</button>
-      <button class="tab" data-tab="contact">Contact</button>
-    </nav>
+    <nav class="tabs">
+  <a class="tab active" href="index.html">Home</a>
+  <a class="tab" href="projects.html">Projects</a>
+  <a class="tab" href="writing.html">Writing</a>
+  <a class="tab" href="contact.html">Contact</a>
+</nav>
   </header>
 
   <main class="container">
@@ -77,116 +77,15 @@
     </div>
 
   </div>
-</div>
+</main>
 
+<footer class="footer">
+  <p>© <span id="year"></span> Fiorella Sosa</p>
+</footer>
 
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
-
-    </section>
-
-    <!-- PROJECTS -->
-    <section class="panel" id="projects">
-      <h2 class="section-title">Projects</h2>
-
-      <div class="grid">
-        <article class="card">
-          <h3>Wicked: For Good</h3>
-          <p class="meta">Integrated Marketing Plan • Entertainment Marketing</p>
-          <ul>
-            <li>Audience + market analysis for growth opportunities</li>
-            <li>Integrated strategy across digital, social, experiential</li>
-            <li>Messaging aligned with brand + fan culture</li>
-          </ul>
-          <p class="skills"><strong>Skills:</strong> Brand strategy, audience insights, campaign planning</p>
-        </article>
-
-        <article class="card">
-          <h3>Just Dance 2026</h3>
-          <p class="meta">Social & Influencer Strategy • Gaming Marketing</p>
-          <ul>
-            <li>Creator Partnerships</li>
-            <li>Trend + platform behavior analysis (TikTok/IG)</li>
-            <li>Campaign ideas blending culture + movement</li>
-          </ul>
-          <p class="skills"><strong>Skills:</strong> Influencer marketing, social strategy, trend analysis</p>
-        </article>
-
-        <article class="card">
-          <h3>Airbnb</h3>
-          <p class="meta">Strategic Brand & Market Analysis • Strategy</p>
-          <ul>
-            <li>Competitive + market forces analysis</li>
-            <li>Positioning around belonging + experience</li>
-            <li>Insights for trust + long-term growth</li>
-          </ul>
-          <p class="skills"><strong>Skills:</strong> Competitive analysis, positioning, strategic thinking</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- WRITING -->
-    <section class="panel" id="writing">
-      <h2 class="section-title">Writing</h2>
-      <div class="grid">
-        <article class="card">
-          <h3>Trinkets and Womanhood</h3>
-          <p class="meta">Advanced Writing • 2026</p>
-          <p>
-            How the act of collecting shapes identity, specifically in relation to womanhood.
-          </p>
-          <div class="link-row">
-          <button class="btn" disabled>Coming soon</button>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3>How Misogyny is Killing Manhood</h3>
-          <p class="meta">Advanced Writing • 2026</p>
-          <p>
-            How societal expectations of masculinity are harmful to men and how redefining manhood can lead to healthier expressions of identity.
-          </p>
-          <div class="link-row">
-            <button class="btn" disabled>Coming soon</button>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="panel" id="contact">
-      <h2 class="section-title">Contact</h2>
-      <div class="card">
-        <p>If you want to connect, email me or find me here:</p>
-        <ul class="contact">
-          <li><strong>Email:</strong> <a href="mailto:sosabara@usc.edu">sosabara@usc.edu</a></li>
-          <li><strong>LinkedIn:</strong><a href="https://www.linkedin.com/in/fiorellasosa/" target="_blank"> ★</a></li>
-          <li><strong>Resume:</strong> <a href="FSresume.pdf" target="_blank">View Resume</a>
-        </ul>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <p>© <span id="year"></span> Fiorella Sosa</p>
-  </footer>
-
-  <script>
-    // Tabs
-    const tabs = document.querySelectorAll(".tab");
-    const panels = document.querySelectorAll(".panel");
-
-    tabs.forEach((t) => {
-      t.addEventListener("click", () => {
-        tabs.forEach((x) => x.classList.remove("active"));
-        panels.forEach((p) => p.classList.remove("active"));
-
-        t.classList.add("active");
-        document.getElementById(t.dataset.tab).classList.add("active");
-      });
-    });
-
-    // Year
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>

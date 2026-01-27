@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Writing | Fiorella Sosa</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="top">
+    <div class="brand">
+      <div class="avatar">FS</div>
+      <div>
+        <h1>Fiorella Sosa</h1>
+        <p class="subtitle">Marketing • Brand Strategy • Consumer Insights</p>
+      </div>
+    </div>
+
+    <nav class="tabs">
+      <a class="tab" href="index.html">Home</a>
+      <a class="tab" href="projects.html">Projects</a>
+      <a class="tab active" href="writing.html">Writing</a>
+      <a class="tab" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2 class="section-title">Writing</h2>
+
+    <div class="grid">
+      <article class="card">
+        <h3>Trinkets and Womanhood</h3>
+        <p class="meta">Advanced Writing • 2026</p>
+        <p>
+          An exploration of how the act of collecting objects shapes identity,
+          particularly in relation to womanhood and self-expression.
+        </p>
+
+        <div class="link-row">
+          <button class="btn" disabled>Coming soon</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>How Misogyny Is Killing Manhood</h3>
+        <p class="meta">Advanced Writing • 2026</p>
+        <p>
+          A critical analysis of how rigid societal expectations of masculinity
+          harm men and limit healthier, more expansive expressions of identity.
+        </p>
+
+        <div class="link-row">
+          <button class="btn" disabled>Coming soon</button>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Fiorella Sosa</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
