@@ -41,6 +41,10 @@ h1, h2, h3{
   margin: 0;
 }
 
+h2{
+  justify-content: center;
+}
+
 a{ color: var(--blue-2); text-decoration: none; }
 a:hover{ text-decoration: underline; }
 
@@ -178,7 +182,7 @@ li{ margin: 8px 0; }
 
 .pill-row{
   margin-top: 12px;
-  margin-bottom: 12px;
+  margin-bottom: 22px;
   display:flex;
   flex-wrap:wrap;
   gap:10px;
