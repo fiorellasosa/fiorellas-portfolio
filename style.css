@@ -119,9 +119,6 @@ h1{
   border-color: rgba(59,130,246,.25);
 }
 
-.panel{ display:none; }
-.panel.active{ display:block; }
-
 .section-title{
   margin: 10px 0 14px;
   font-size: 18px;
