@@ -41,6 +41,16 @@ h1, h2, h3{
   margin: 0;
 }
 
+.left-intro {
+  text-align: center;
+  margin-top: 28px; /* space from the photo */
+}
+
+.left-intro h2 {
+  margin-bottom: 12px;
+}
+
+
 a{ color: var(--blue-2); text-decoration: none; }
 a:hover{ text-decoration: underline; }
 
