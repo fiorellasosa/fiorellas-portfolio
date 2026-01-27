@@ -239,33 +239,43 @@ li{ margin: 8px 0; }
 }
 
 /* portrait styling */
-.portrait-card{
-  background: rgba(255,255,255,.55);
-  border: 1px solid var(--border);
+
+.portrait-card {
+  position: relative; /* ← REQUIRED */
+  background: linear-gradient(
+    135deg,
+    rgba(191,231,255,.35),
+    rgba(199,183,255,.25)
+  );
   border-radius: 26px;
-  padding: 14px;
+  padding: 18px;
   box-shadow: var(--shadow);
-  position: relative;
-  overflow: hidden;
+  overflow: hidden; /* keeps glow soft + contained */
+  margin-bottom: 32px; /* space before “Hi, I’m Fiorella” */
 }
 
-.portrait-card::before{
-  content:"";
-  position:absolute;
-  inset:-40px;
+/* dreamy glow */
+.portrait-card::before {
+  content: "";
+  position: absolute;
+  inset: -40px;
+  z-index: 0; /* behind image */
   background:
     radial-gradient(circle at 30% 30%, rgba(59,130,246,.25), transparent 55%),
     radial-gradient(circle at 70% 60%, rgba(199,183,255,.25), transparent 55%),
     radial-gradient(circle at 40% 80%, rgba(255,183,213,.18), transparent 55%);
-  filter: blur(2px);
+  filter: blur(12px);
 }
 
-.portrait{
+.portrait {
   position: relative;
+  z-index: 1; /* above glow */
   width: 100%;
   max-height: 420px;
   object-fit: contain;
   border-radius: 22px;
   border: 4px solid rgba(59,130,246,.25);
-  display:block;
+  display: block;
+  background: transparent; /* ensures PNG stays clean */
 }
+
