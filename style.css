@@ -178,6 +178,7 @@ li{ margin: 8px 0; }
 
 .pill-row{
   margin-top: 12px;
+  margin-bottom: 12px;
   display:flex;
   flex-wrap:wrap;
   gap:10px;
