@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fiorella Sosa | Marketing Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="top">
+    <div class="brand">
+      <div class="avatar">FS</div>
+      <div>
+        <h1>Fiorella Sosa</h1>
+        <p class="subtitle">Marketing • Brand Strategy • Influencer Marketing</p>
+      </div>
+    </div>
+
+    <nav class="tabs" aria-label="Site tabs">
+      <button class="tab active" data-tab="home">Home</button>
+      <button class="tab" data-tab="projects">Projects</button>
+      <button class="tab" data-tab="writing">Writing</button>
+      <button class="tab" data-tab="contact">Contact</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- HOME -->
+    <section class="panel active" id="home">
+      <div class="card hero">
+        <div>
+          <h2>Hi, I’m Fiorella 💙</h2>
+          <p>
+            I’m a USC marketing student interested in community-driven growth, influencer strategy,
+            and social-first storytelling. I like turning creative ideas into campaigns people actually join.
+          </p>
+
+          <div class="pill-row">
+            <span class="pill">Social Strategy</span>
+            <span class="pill">Audience Insights</span>
+            <span class="pill">Creator Partnerships</span>
+            <span class="pill">Brand Storytelling</span>
+          </div>
+        </div>
+
+        <div class="mini-stack">
+          <div class="mini-card">
+            <h3>Quick vibe</h3>
+            <p>Blue + pastels, doodles, clean layout, fun but professional.</p>
+          </div>
+          <div class="mini-card">
+            <h3>Currently</h3>
+            <p>Building a cute portfolio site + showcasing class projects.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="panel" id="projects">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Wicked: For Good</h3>
+          <p class="meta">Integrated Marketing Plan • Entertainment Marketing</p>
+          <ul>
+            <li>Audience + market analysis for growth opportunities</li>
+            <li>Integrated strategy across digital, social, experiential</li>
+            <li>Messaging aligned with brand + fan culture</li>
+          </ul>
+          <p class="skills"><strong>Skills:</strong> Brand strategy, audience insights, campaign planning</p>
+        </article>
+
+        <article class="card">
+          <h3>Just Dance 2026</h3>
+          <p class="meta">Social & Influencer Strategy • Gaming Marketing</p>
+          <ul>
+            <li>Creator partnership concepts + collabs</li>
+            <li>Trend + platform behavior analysis (TikTok/IG)</li>
+            <li>Campaign ideas blending culture + movement</li>
+          </ul>
+          <p class="skills"><strong>Skills:</strong> Influencer marketing, social strategy, trend analysis</p>
+        </article>
+
+        <article class="card">
+          <h3>Airbnb</h3>
+          <p class="meta">Strategic Brand & Market Analysis • Strategy</p>
+          <ul>
+            <li>Competitive + market forces analysis</li>
+            <li>Positioning around belonging + experience</li>
+            <li>Insights for trust + long-term growth</li>
+          </ul>
+          <p class="skills"><strong>Skills:</strong> Competitive analysis, positioning, strategic thinking</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- WRITING -->
+    <section class="panel" id="writing">
+      <h2 class="section-title">Writing</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Writing Project Title</h3>
+          <p class="meta">Course • Year</p>
+          <p>
+            1–2 sentence summary of what it argues / explores + what you learned.
+          </p>
+          <div class="link-row">
+            <a class="btn" href="#" target="_blank" rel="noreferrer">Read PDF</a>
+            <a class="btn ghost" href="#" target="_blank" rel="noreferrer">Highlights</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Writing Project Title</h3>
+          <p class="meta">Course • Year</p>
+          <p>
+            1–2 sentence summary. (If you don’t want links yet, leave buttons as “coming soon”.)
+          </p>
+          <div class="link-row">
+            <button class="btn" disabled>Coming soon</button>
+          </div>
+        </article>
+      </div>
+
+      <p class="hint">Tip: You can link your PDFs later by putting them in your folder and updating the href.</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="panel" id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="card">
+        <p>If you want to connect, email me or find me here:</p>
+        <ul class="contact">
+          <li><strong>Email:</strong> <a href="mailto:sosabara@usc.edu">sosabara@usc.edu</a></li>
+          <li><strong>LinkedIn:</strong> <a href="#" target="_blank" rel="noreferrer">Add your link</a></li>
+          <li><strong>Resume:</strong> <a href="#" target="_blank" rel="noreferrer">Add your PDF link</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Fiorella Sosa • made with 💙</p>
+  </footer>
+
+  <script>
+    // Tabs
+    const tabs = document.querySelectorAll(".tab");
+    const panels = document.querySelectorAll(".panel");
+
+    tabs.forEach((t) => {
+      t.addEventListener("click", () => {
+        tabs.forEach((x) => x.classList.remove("active"));
+        panels.forEach((p) => p.classList.remove("active"));
+
+        t.classList.add("active");
+        document.getElementById(t.dataset.tab).classList.add("active");
+      });
+    });
+
+    // Year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
