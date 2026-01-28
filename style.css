@@ -337,25 +337,3 @@ li{ margin: 8px 0; }
 .creative-page .card {
   margin-bottom: 28px;
 }
-.creative-page .card + .card {
-  margin-top: 32px;
-}
-
-/* Creative page only: make mini-cards feel less bottom-heavy */
-.creative-page .mini-card{
-  padding: 18px;
-}
-
-.creative-page .mini-card h4{
-  margin: 0 0 10px;
-}
-
-.creative-page .mini-card p{
-  margin: 0 0 14px;
-  line-height: 1.5;
-}
-
-.creative-page .mini-card .btn{
-  margin-top: 6px;
-  align-self: flex-start; /* keeps button from looking “stuck” at the bottom */
-}
