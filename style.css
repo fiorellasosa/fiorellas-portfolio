@@ -316,3 +316,19 @@ li{ margin: 8px 0; }
   margin-top:auto;
   justify-content:center; 
 }
+
+.creative-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.creative-item img{
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.6);
+  border: 1px solid rgba(0,0,0,0.06);
+}
