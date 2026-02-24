@@ -358,17 +358,20 @@ li{ margin: 8px 0; }
   margin-top: 10px;
 }
 
-/* Portrait hover swap (smooth fade) */
-.portrait-wrapper {
+/* FIX: make the portrait wrapper keep height */
+.portrait-wrapper{
   position: relative;
+  width: 100%;
+  height: clamp(280px, 45vw, 420px); /* responsive height */
 }
 
-.portrait-wrapper .portrait {
+/* make both images fill the wrapper */
+.portrait-wrapper .portrait{
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100%;
-  transition: opacity 0.4s ease;
+  height: 100%;
+  object-fit: contain;
 }
 
 .portrait-wrapper .portrait-pink {
