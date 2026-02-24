@@ -357,8 +357,3 @@ li{ margin: 8px 0; }
 .creative-page .mini-stack{
   margin-top: 10px;
 }
-
-/* SIMPLE image swap on hover */
-.portrait-swap:hover {
-  content: url("images/portraitcolor.png");
-}
