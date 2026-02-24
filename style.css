@@ -357,3 +357,13 @@ li{ margin: 8px 0; }
 .creative-page .mini-stack{
   margin-top: 10px;
 }
+
+/* Pink tint by default, normal on hover (keeps layout identical) */
+.portrait-card .portrait{
+  transition: filter .25s ease, opacity .25s ease;
+  filter: grayscale(20%) sepia(35%) hue-rotate(260deg) saturate(130%) brightness(1.05);
+}
+
+.portrait-card:hover .portrait{
+  filter: none;
+}
