@@ -358,32 +358,26 @@ li{ margin: 8px 0; }
   margin-top: 10px;
 }
 
-.portrait-wrapper{
+/* SIMPLE HOME IMAGE SWAP */
+.portrait-card .portrait-wrapper{
   position: relative;
   width: 100%;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: 22px;
 }
 
-/* make both images fill the wrapper */
-.portrait-wrapper .portrait{
-  position: relative;
+.portrait-card .portrait-img{
+  position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  transition: opacity .25s ease;
 }
 
-.portrait-wrapper .portrait-pink {
-  opacity: 1;
-}
+.portrait-card .portrait-pink { opacity: 1; }
+.portrait-card .portrait-color { opacity: 0; }
 
-.portrait-wrapper .portrait-color {
-  opacity: 0;
-}
-
-.portrait-wrapper:hover .portrait-pink {
-  opacity: 0;
-}
-
-.portrait-wrapper:hover .portrait-color {
-  opacity: 1;
-}
+.portrait-card .portrait-wrapper:hover .portrait-pink { opacity: 0; }
+.portrait-card .portrait-wrapper:hover .portrait-color { opacity: 1; }
