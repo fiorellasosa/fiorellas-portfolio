@@ -1,7 +1,7 @@
 
 :root{
   --bg: #ccc4b8;   /* warmer + slightly darker ivory */               /* soft ivory */
-  --card: rgba(255,255,255,.93);];
+  --card: rgba(255,255,255,.93);
 
   --ink: #1b221f;                /* deeper charcoal */
   --ink-soft: #2a332f;
@@ -28,14 +28,12 @@ body{
   margin:0;
   font-family: "Inter", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
   color: var(--ink);
+  background-color: var(--bg);
 
-  /* background */
   background:
-  radial-gradient(circle at 15% 20%, rgba(47,79,70,.18), transparent 45%),
-  radial-gradient(circle at 85% 30%, rgba(199,184,158,.25), transparent 38%),
-  radial-gradient(circle at 30% 85%, rgba(61,107,95,.12), transparent 40%);
-  linear-gradient(rgba(0,0,0,.04), rgba(0,0,0,.04)),
-background-color: var(--bg);
+    radial-gradient(circle at 15% 20%, rgba(47,79,70,.18), transparent 45%),
+    radial-gradient(circle at 85% 30%, rgba(199,184,158,.25), transparent 38%),
+    radial-gradient(circle at 30% 85%, rgba(61,107,95,.12), transparent 40%),
 }
 
 h1, h2, h3{
@@ -105,11 +103,9 @@ h1{
   justify-content:flex-end;
 }
 
-.tab{
  .tab{
   border: 1px solid var(--border);
   background: rgba(255,255,255,.75);
-}
   backdrop-filter: blur(10px);
   padding: 10px 14px;
   border-radius: 999px;
@@ -118,6 +114,7 @@ h1{
   color: var(--ink);
   transition: transform .08s ease, background .2s ease;
 }
+
 .tab:hover{ transform: translateY(-1px); }
 .tab.active{
   background: linear-gradient(
