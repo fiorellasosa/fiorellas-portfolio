@@ -44,7 +44,7 @@ body::before{
   z-index: -2;
 
   /* IMPORTANT: background.png must be in the same folder as style.css */
-  background: url("images/background.png") center/cover no-repeat;
+  background: url("images/background.png") no-repeat / right bottom;;
 
   /* dial these 3 values to taste */
   filter: blur(42px) saturate(115%) brightness(88%);
