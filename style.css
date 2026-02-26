@@ -47,8 +47,8 @@ body::before{
   background-position: 85% 85%;
   background-size: 140%;
 
-  filter: blur(15px) saturate(120%) brightness(95%);
-  opacity: 1;
+  filter: blur(18px) saturate(110%) brightness(92%);
+opacity: .85;
 }
 
 body::after{
@@ -108,13 +108,13 @@ a:hover{ text-decoration: underline; }
 }
 
 .avatar{
-  width:46px; height:46px;
-  border-radius: 16px;
-  display:grid; place-items:center;
-  background: linear-gradient(135deg, var(--accent-dark), var(--blue));
-  color:white;
-  font-weight: 800;
-  box-shadow: var(--shadow);
+  .avatar{
+  background: rgba(255,255,255,.2);
+  backdrop-filter: blur(18px) saturate(150%);
+  -webkit-backdrop-filter: blur(18px) saturate(150%);
+  border: 1px solid rgba(255,255,255,.4);
+  color: var(--green-deep);
+}
 }
 
 h1{
