@@ -1,7 +1,7 @@
 
 :root{
-  --bg: #f5f4f1;                 /* soft ivory */
-  --card: rgba(255,255,255,.88);
+  --bg: #ccc4b8;   /* warmer + slightly darker ivory */               /* soft ivory */
+  --card: rgba(255,255,255,.93);];
 
   --ink: #1b221f;                /* deeper charcoal */
   --ink-soft: #2a332f;
@@ -17,7 +17,7 @@
   --pastel-mint: #d8dfda;
   --pastel-sky: #87af9b;
 
-  --border: rgba(27,34,31,.16);
+  --border: rgba(27,34,31,.22);
   --shadow: 0 22px 60px rgba(0,0,0,.12);
 }
 
@@ -31,9 +31,10 @@ body{
 
   /* background */
   background:
-  radial-gradient(circle at 15% 20%, rgba(47,79,70,.12), transparent 40%),
-  radial-gradient(circle at 85% 30%, rgba(199,184,158,.18), transparent 38%),
+  radial-gradient(circle at 15% 20%, rgba(47,79,70,.18), transparent 45%),
+  radial-gradient(circle at 85% 30%, rgba(199,184,158,.25), transparent 38%),
   radial-gradient(circle at 30% 85%, rgba(61,107,95,.12), transparent 40%);
+  linear-gradient(rgba(0,0,0,.04), rgba(0,0,0,.04)),
 background-color: var(--bg);
 }
 
@@ -224,13 +225,19 @@ li{ margin: 8px 0; }
 }
 
 .btn{
-  border:none;
-  background: linear-gradient(135deg, var(--accent-dark), var(--accent-brown));
-  color:white;
+  border: none;
+  background: linear-gradient(145deg, #3b3a34, #2b2a26);
+  color: #f8f6f2;
   font-weight: 800;
-  padding: 10px 14px;
+  padding: 10px 16px;
   border-radius: 999px;
-  cursor:pointer;
+  cursor: pointer;
+
+  box-shadow:
+    0 10px 20px rgba(0,0,0,.18),
+    inset 0 1px 0 rgba(255,255,255,.12);
+
+  transition: all .25s ease;
 }
 
 .btn.ghost{
