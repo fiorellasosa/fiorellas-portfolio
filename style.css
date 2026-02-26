@@ -207,9 +207,9 @@ li{ margin: 8px 0; }
   font-weight: 700;
   font-size: 12px;
 
-  color: #3a3326; /* warm brown text */
+  color: #ffffff; /* warm brown text */
 
-  border: 1px solid rgba(155,130,75,.35);
+  border: 1px solid rgba(144, 130, 98, 0.35);
 
   background: linear-gradient(
     145deg,
