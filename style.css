@@ -202,12 +202,24 @@ li{ margin: 8px 0; }
 }
 
 .pill{
-  padding: 8px 12px;
+  padding: 8px 14px;
   border-radius: 999px;
   font-weight: 700;
   font-size: 12px;
-  border: 1px solid rgba(47,79,70,.18);
-  background: linear-gradient(135deg, rgba(191,231,255,.55), rgba(255,183,213,.25));
+
+  color: #3a3326; /* warm brown text */
+
+  border: 1px solid rgba(155,130,75,.35);
+
+  background: linear-gradient(
+    145deg,
+    #e8ddc7,
+    #d6c3a1
+  );
+
+  box-shadow:
+    0 4px 10px rgba(0,0,0,.08),
+    inset 0 1px 0 rgba(255,255,255,.4);
 }
 
 .skills{
