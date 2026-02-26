@@ -43,11 +43,12 @@ body::before{
   inset: 0;
   z-index: -2;
 
-  background: url("images/background.png") right bottom no-repeat;
-  background-size: 120%;
+ background: url("images/background.png") no-repeat;
+  background-position: 85% 85%;
+  background-size: 140%;
 
-  filter: blur(42px) saturate(115%) brightness(88%);
-  opacity: .9;
+  filter: blur(20px) saturate(130%) brightness(95%);
+  opacity: 1;
 }
 
 body::after{
@@ -58,11 +59,11 @@ body::after{
   pointer-events: none;
 
   background:
-    radial-gradient(circle at 65% 65%,
-      rgba(239,233,223,.15),
-      rgba(239,233,223,.55) 60%,
-      rgba(239,233,223,.70) 100%
-    );
+  radial-gradient(circle at 60% 30%,
+    rgba(239,233,223,.10),
+    rgba(239,233,223,.45) 55%,
+    rgba(239,233,223,.60) 100%
+  );
 }
 
 h1, h2, h3{
