@@ -47,7 +47,7 @@ body::before{
   background-position: 85% 85%;
   background-size: 140%;
 
-  filter: blur(10px) saturate(110%) brightness(92%);
+  filter: blur(3px) saturate(110%) brightness(92%);
 opacity: .85;
 }
 
