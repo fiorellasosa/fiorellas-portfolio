@@ -47,7 +47,7 @@ body::before{
   background-position: 85% 85%;
   background-size: 140%;
 
-  filter: blur(18px) saturate(110%) brightness(92%);
+  filter: blur(10px) saturate(110%) brightness(92%);
 opacity: .85;
 }
 
@@ -60,9 +60,9 @@ body::after{
 
   background:
   radial-gradient(circle at 60% 30%,
-    rgba(239,233,223,.6),
-    rgba(239,233,223,.20) 55%,
-    rgba(239,233,223,.32) 100%
+    rgba(239,233,223,.10),
+    rgba(239,233,223,.45) 55%,
+    rgba(239,233,223,.60) 100%
   );
 }
 
