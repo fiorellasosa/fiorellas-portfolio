@@ -43,11 +43,9 @@ body::before{
   inset: 0;
   z-index: -2;
 
-  /* IMPORTANT: background.png must be in the same folder as style.css */
-  background: url("images/background.png") no-repeat / right bottom;
+  background: url("images/background.png") right bottom no-repeat;
   background-size: 120%;
 
-  /* dial these 3 values to taste */
   filter: blur(42px) saturate(115%) brightness(88%);
   opacity: .9;
 }
@@ -59,10 +57,12 @@ body::after{
   z-index: -1;
   pointer-events: none;
 
-  /* overlay tint + subtle vignette */
   background:
-    radial-gradient(circle at 50% 25%, rgba(239,233,223,.35), rgba(239,233,223,.85) 60%, rgba(239,233,223,.92) 100%),
-    linear-gradient(to bottom, rgba(239,233,223,.35), rgba(239,233,223,.85));
+    radial-gradient(circle at 65% 65%,
+      rgba(239,233,223,.15),
+      rgba(239,233,223,.55) 60%,
+      rgba(239,233,223,.70) 100%
+    );
 }
 
 h1, h2, h3{
