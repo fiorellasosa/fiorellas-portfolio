@@ -108,31 +108,30 @@ a:hover{ text-decoration: underline; }
 }
 
 .avatar{
-  width: 46px;
-  height: 46px;
-  border-radius: 16px;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
 
   display: grid;
   place-items: center;
 
   font-weight: 800;
-  font-size: 14px;
-  letter-spacing: .5px;
+  font-size: 13px;
+  letter-spacing: .6px;
   line-height: 1;
 
-  color: rgba(26,31,28,.88);
+  color: rgba(26,31,28,.9);
 
-  background: rgba(255,255,255,.22);
-  border: 1px solid rgba(255,255,255,.45);
-
-  backdrop-filter: blur(14px) saturate(140%);
-  -webkit-backdrop-filter: blur(14px) saturate(140%);
+  background: rgba(255,255,255,.78);
+  border: 1px solid rgba(255,255,255,.55);
 
   box-shadow:
-    0 10px 24px rgba(0,0,0,.10),
-    inset 0 1px 0 rgba(255,255,255,.55);
+    0 12px 28px rgba(0,0,0,.12),
+    inset 0 1px 0 rgba(255,255,255,.65);
 
-  flex: 0 0 auto; /* prevents squishing in flex rows */
+  /* optional: subtle blur like your cards/pills */
+  backdrop-filter: blur(10px) saturate(120%);
+  -webkit-backdrop-filter: blur(10px) saturate(120%);
 }
 
 h1{
