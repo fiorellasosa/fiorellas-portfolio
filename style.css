@@ -108,46 +108,31 @@ a:hover{ text-decoration: underline; }
 }
 
 .avatar{
-  width: 48px;
-  height: 48px;
-  border-radius: 14px; /* soft rounded, not circle */
+  width: 52px;
+  height: 52px;
+  border-radius: 16px; /* soft rounded like you wanted */
 
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  box-shadow:
-    0 12px 28px rgba(0,0,0,.18);
-}
-
-.avatar{
-  width: 44px;
-  height: 44px;
-  border-radius: 999px;
-
-  display: grid;
-  place-items: center;
-
-  font-weight: 800;
-  font-size: 13px;
-  letter-spacing: .6px;
-  line-height: 1;
-
-  color: rgba(26,31,28,.9);
-
-  background: rgba(255,255,255,.78);
-  border: 1px solid rgba(255,255,255,.55);
+  background: rgba(255,255,255,.85);
+  border: 1px solid rgba(255,255,255,.6);
 
   box-shadow:
-    0 12px 28px rgba(0,0,0,.12),
-    inset 0 1px 0 rgba(255,255,255,.65);
+    0 14px 30px rgba(0,0,0,.18),
+    inset 0 1px 0 rgba(255,255,255,.6);
 
-  /* optional: subtle blur like your cards/pills */
-  backdrop-filter: blur(10px) saturate(120%);
-  -webkit-backdrop-filter: blur(10px) saturate(120%);
+  backdrop-filter: blur(8px) saturate(120%);
+  -webkit-backdrop-filter: blur(8px) saturate(120%);
 }
 
+.avatar img{
+  width: 85%;
+  height: 85%;
+  object-fit: contain;
+}
 h1{
   font-size: 22px;
 }
